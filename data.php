@@ -15,4 +15,4 @@ if (mysqli_connect_errno()) {
 } else {
     // echo "Database Connected Successfully!!";
    //new path suggestested
-}
+} 
