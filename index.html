@@ -4,160 +4,126 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Timothy Adedotun">
-	<meta name="description"
-		content="Portfolio website of Timothy Adedotun - Software Developer, Music Artist, and Model.">
-	<meta name="keywords"
-		content="Timothy Adedotun, TAZ, Music Artist, Software Developer, Model, Portfolio, Creative Professional">
+	<meta name="theme-color" content="#0c1411">
+	<title>Timothy Adedotun (TAZ) | Multi-disciplinary Creative</title>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<!-- SEO -->
+	<meta name="description" content="Timothy Adedotun (TAZ) is a front-end developer, music artist (TAZII) and model based in Lagos, Nigeria. Explore his work in web development, music and fashion.">
+	<meta name="author" content="Timothy Adedotun">
+	<meta name="keywords" content="Timothy Adedotun, TAZ, TAZII, front-end developer Lagos, rapper Lagos, male model Lagos, creative portfolio">
+	<link rel="canonical" href="https://know-taz.netlify.app/">
+
+	<!-- Social sharing (replace YOUR-DOMAIN, and add a 1200x630 image at /img/share.jpg) -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Timothy Adedotun (TAZ) | Developer, Artist and Model">
+	<meta property="og:description" content="Websites, music and modeling work from Lagos, Nigeria. Choose a path to explore.">
+	<meta property="og:image" content="https://YOUR-DOMAIN/img/share.jpg">
+	<meta property="og:url" content="https://know-taz.netlify.app/">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<!-- Helps Google understand who this site is about -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Timothy Adedotun",
+		"alternateName": ["TAZ", "TAZII"],
+		"jobTitle": "Front-End Developer, Music Artist and Model",
+		"url": "https://know-taz.netlify.app/",
+		"address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressCountry": "NG" },
+		"sameAs": [
+			"https://github.com/moonboy90210",
+			"https://linkedin.com/in/adedotun-alagbe"
+		]
+	}
+	</script>
+
+	<!-- Fonts: Bodoni Moda (display) + Jost (body) -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
-		rel="stylesheet">
-	<script src="https://kit.fontawesome.com/0f977cd8f2.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..700&family=Jost:wght@300..500&display=swap" rel="stylesheet">
+
+	<script>document.documentElement.className += ' js';</script>
+	<script src="https://kit.fontawesome.com/0f977cd8f2.js" crossorigin="anonymous" defer></script>
 	<link rel="stylesheet" href="index.css">
-	<title>TAZ - Creative Portfolio</title>
 </head>
 
 <body>
+	<a class="skip" href="#paths">Skip to portfolio</a>
 
-	<main class="container"> 
-		<!-- Header Section -->
-		<header class="header">
-			<div class="logo-mark" aria-label="TAZ Logo">
-				<span class="logo-letter">T</span>
-				<span class="logo-letter">A</span>
-				<span class="logo-letter">Z</span>
-				<span class="logo-letter">T</span>
-				<span class="logo-letter">E</span>
-				<span class="logo-letter">C</span>
-				<span class="logo-letter">H</span>
-			</div>
-			<div class="header-links d-none d-md-flex">
-				<span class="footer-link"><a href="mailto:atalagbe19@gmail.com" rel="noopener" title="Email"
-						target="_blank"><i class="fa-solid fa-envelope"></i></a></span>
-				<span class="footer-link"><a href="http://github.com/moonboy90210" rel="noopener" title="Github"
-						target="_blank"><i class="fab fa-github"></i></a></span>
-				<span class="footer-link"><a href="http://linkedin.com/in/adedotun-alagbe" rel="noopener" title="LinkedIn"
-						target="_blank"><i class="fab fa-linkedin"></i></a>
-				</span>
+	<header class="header">
+		<a href="/" class="logo" aria-label="TAZ Tech home">TAZ<span>TECH</span></a>
+		<nav class="social" aria-label="Contact and social links">
+			<a href="mailto:atalagbe19@gmail.com" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+			<a href="https://github.com/moonboy90210" rel="noopener" target="_blank" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+			<a href="https://linkedin.com/in/adedotun-alagbe" rel="noopener" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+		</nav>
+	</header>
 
-			</div>
-		</header>
-		<!-- Hero Section -->
+	<main>
 		<section class="hero">
-			<h1 class="hero-title">
-				<span class="title-line">Timothy</span>
-				<span class="title-line">Adedotun</span>
-			</h1>
-			<p class="hero-subtitle">Multi-disciplinary Creative</p>
-			<div class="hero-divider"></div>
+			<h1>Timothy Adedotun</h1>
+			<p>Multi-disciplinary Creative.</p>
 		</section>
 
-		<!-- Portfolio Cards Section -->
-		<section class="portfolio-grid p-xl-0">
-			<button class="carousel-arrow carousel-arrow-left" aria-label="Previous character">
-				<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						stroke-linejoin="round" />
-				</svg>
+		<section class="paths" id="paths" aria-label="Portfolio paths">
+			<span class="watermark" aria-hidden="true">TAZ</span>
+
+			<button class="arrow arrow-left" aria-label="Previous path">
+				<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
 			</button>
 
-			<div class="carousel-wrapper">
-				<div class="carousel-track">
-					<a href="https://tazii.netlify.app" class="portfolio-card" data-role="artist">
-						<div class="card-image-wrapper">
-							<img src="./img/prof 24.jpg" alt="TAZ - The Artist" class="card-image">
-							<div class="card-overlay"></div>
-						</div>
-						<div class="card-content">
-							<span class="card-number">TAZII</span>
-							<h2 class="card-title">The Artist</h2>
-							<p class="card-description">Rapper & Trapper</p>
-							<span class="card-arrow">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2"
-										stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</span>
-						</div>
-					</a>
+			<div class="carousel" aria-live="polite">
+				<a href="https://tazii.netlify.app" class="card prev" data-role="artist">
+					<img src="./img/prof 24.jpg" alt="Timothy Adedotun as TAZII, the artist" class="card-img">
+					<div class="card-body">
+						<h2 class="card-title">The Artist</h2>
+						<p class="card-desc">Rappper & Trapper</p>
+						<span class="card-cta">View portfolio</span>
+					</div>
+				</a>
 
-					<a href="https://taz-tech.netlify.app" class="portfolio-card active" data-role="developer">
-						<div class="card-image-wrapper">
-							<img src="./img/techbro.JPG" alt="TAZ - The Developer" class="card-image">
-							<div class="card-overlay"></div>
-						</div>
-						<div class="card-content">
-							<span class="card-number">TAZ</span>
-							<h2 class="card-title">The Developer</h2>
-							<p class="card-description">Software & Web Development</p>
-							<span class="card-arrow">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2"
-										stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</span>
-						</div>
-					</a>
+				<a href="https://taz-tech.netlify.app" class="card active" data-role="developer">
+					<img src="./img/techbro.JPG" alt="Timothy Adedotun, the developer" class="card-img">
+					<div class="card-body">
+						<h2 class="card-title">The Developer</h2>
+						<p class="card-desc">Websites & web apps</p>
+						<span class="card-cta">View portfolio</span>
+					</div>
+				</a>
 
-					<a href="https://model-taz.netlify.app" class="portfolio-card" data-role="model">
-						<div class="card-image-wrapper">
-							<img src="./img/IMG_5501.jpg" alt="TAZ - The Model" class="card-image">
-							<div class="card-overlay"></div>
-						</div>
-						<div class="card-content">
-							<span class="card-number">TAZ</span>
-							<h2 class="card-title">The Model</h2>
-							<p class="card-description">Fashion & Commercial</p>
-							<span class="card-arrow">
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2"
-										stroke-linecap="round" stroke-linejoin="round" />
-								</svg>
-							</span>
-						</div>
-					</a>
-				</div>
+				<a href="https://model-taz.netlify.app" class="card next" data-role="model">
+					<img src="./img/IMG_5501.jpg" alt="Timothy Adedotun, the model" class="card-img">
+					<div class="card-body">
+						<h2 class="card-title">The Model</h2>
+						<p class="card-desc">Fashion & commercial work</p>
+						<span class="card-cta">View portfolio</span>
+					</div>
+				</a>
 			</div>
 
-			<button class="carousel-arrow carousel-arrow-right" aria-label="Next character">
-				<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						stroke-linejoin="round" />
-				</svg>
+			<button class="arrow arrow-right" aria-label="Next path">
+				<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
 			</button>
 		</section>
 
+		<div class="dots">
+			<button class="dot" aria-label="Show The Artist"></button>
+			<button class="dot active" aria-label="Show The Developer"></button>
+			<button class="dot" aria-label="Show The Model"></button>
+		</div>
+
+		<section class="cta">
+			<p>Need a website, a feature or a model? Send a message!</p>
+			<a class="btn" href="mailto:atalagbe19@gmail.com?subject=Project%20enquiry">Email Adedotun</a>
+		</section>
 	</main>
 
-
-	<!-- Footer -->
 	<footer class="footer">
-		<div class="footer-content">
-			<div class="footer-links d-md-none">
-				<p class="footer-link"><a href="http://github.com/moonboy90210" rel="noopener" title="Github"
-						target="_blank"><i class="fab fa-github"></i></a></p>
-				<p class="footer-link"><a href="mailto:atalagbe19@gmail.com" rel="noopener" title="Email"
-						target="_blank"><i class="fa-solid fa-envelope"></i></a></p>
-				<p class="footer-link"><a href="http://linkedin.com/in/adedotun-alagbe" rel="noopener" title="LinkedIn"
-						target="_blank"><i class="fab fa-linkedin"></i></a>
-				</p>
-			</div>
-			<p class="footer-text">© 2026 Taz Tech. All Rights Reserved.</p>
-		</div>
+		<p>&copy; <span id="year">2026</span> Taz Tech. All rights reserved.</p>
 	</footer>
 
-	<script src="script.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
+	<script src="script.js" defer></script>
 </body>
 
 </html>
